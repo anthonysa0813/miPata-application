@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap");
+
+:root {
+  --bg-white: #ffffff;
+  --bg-gray: #e1e1e1;
+  --bg-gray200: #676565;
+  --bg-gray300: #616161b7;
+  --bg-gray800: #fbbf24;
+  --bg-blue-primary: rgb(55, 55, 164);
+  --bg-yellow: #ffb81c;
+  --bg-yellow-medium: #dc9908fa;
+  --bg-orange: #ff6900;
+  --bg-orange-medium: #ff6900df;
+  --bg-dark: #273036;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Comfortaa", Roboto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.color-orange {
+  color: var(--bg-orange);
+}
+
+.bg-orange {
+  background-color: var(--bg-orange);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.swiper-wrapper {
+}

@@ -1,0 +1,47 @@
+.buttonContainer {
+  display: flex;
+  margin-block: 30px;
+  column-gap: 0.5rem;
+  height: 40px;
+  background-color: black;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  p {
+    margin: 0;
+  }
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    img {
+      object-fit: cover;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textLight {
+    font-size: 0.45rem;
+    font-weight: lighter;
+    color: white;
+  }
+  .textTitle {
+    font-size: 0.75rem;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .textLight {
+    font-size: 0.65rem;
+    font-weight: lighter;
+  }
+
+  .textTitle {
+    font-size: 1.25rem;
+  }
+}

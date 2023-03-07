@@ -1,0 +1,147 @@
+.heroContainer {
+  height: auto;
+  // border: 2px solid brown;
+  // background-image: url("/images/waves/wave.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  margin-block-start: 80px;
+  h1 {
+    margin: 10px 0;
+    color: var(--bg-orange);
+    font-size: 32px;
+  }
+  p {
+    color: var(--bg-dark);
+    font-size: 16px;
+    span {
+      font-weight: bolder;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--bg-gray200);
+    }
+  }
+}
+
+.buttonSocials {
+  display: flex;
+  column-gap: 1rem;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 1rem;
+    li {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--bg-dark);
+      p {
+        color: var(--bg-dark);
+      }
+      transition: all 0.3s ease;
+      &:hover {
+        color: var(--bg-orange);
+        cursor: pointer;
+        p {
+          // color: var(--bg-dark);
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  // column-gap: 5rem;
+  // border: 2px solid brown;
+  // padding: 1rem;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.imageContent {
+  // flex: 1 0 30%;
+  width: 100%;
+  display: flex;
+  background-color: var(--bg-orange);
+
+  order: 2;
+  justify-content: end;
+  // border: 2px solid;
+  align-items: center;
+  padding: 2rem 1rem;
+
+  img {
+    height: 370px;
+    object-fit: contain;
+  }
+}
+
+.imageContainer {
+}
+
+.infoHero {
+  // border: 2px solid brown;
+  padding: 1rem;
+  .wrapper {
+    width: 100%;
+    color: var(--bg-white);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    column-gap: 5rem;
+  }
+  .imageContent {
+    flex: 1 0 30%;
+
+    img {
+      height: 400px;
+      width: 250px;
+      // top: 30%;
+      // left: 0;
+    }
+  }
+
+  .heroContainer {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    column-gap: 5rem;
+    // border: 2px solid green;
+    margin-block-start: 80px;
+  }
+  .imageContent {
+    justify-content: flex-end;
+    flex: 1 0 30%;
+    height: 100%;
+
+    // background-color: var(--bg-orange-medium);
+    // border: 2px solid brown;
+  }
+
+  .heroContainer {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .imageContent {
+    order: -1;
+  }
+}

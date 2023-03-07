@@ -1,0 +1,83 @@
+.btn {
+  border: none;
+  background-color: none;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  column-gap: 0.25rem;
+  background-color: var(--bg-white);
+  transition: all 0.3s ease;
+  border: 1px solid;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--bg-dark);
+  color: white;
+}
+
+.textCenter {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  font-weight: bold;
+  margin: 0;
+  /* color: orange !important; */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textCenter span {
+  font-weight: bold;
+}
+
+.btn svg {
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+}
+
+.btn span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.btn:hover > span {
+  color: var(--bg-white);
+}
+
+.btn:hover > svg {
+  color: var(--bg-white);
+}
+
+.rounded {
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--bg-white) !important;
+}
+
+.rounded:hover > svg {
+  /* color: var(--bg-yellow); */
+}
+
+.rounded svg {
+  font-size: 0.5rem;
+  height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+  .btn span {
+    font-size: 1rem;
+  }
+}
