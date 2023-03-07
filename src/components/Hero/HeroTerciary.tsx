@@ -1,15 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../../styles/Hero/Hero3.module.scss";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { SlSocialFacebook } from "react-icons/sl";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCreative, Autoplay } from "swiper";
 import "swiper/css";
-
 import "swiper/css/pagination";
-import ButtonPrimary from "../Button/ButtonWithIcon";
 import ButtonLinkDownload from "../Button/ButtonLinkDownload";
 
 const Hero3 = () => {
