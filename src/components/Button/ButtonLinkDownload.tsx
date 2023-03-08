@@ -12,7 +12,15 @@ interface Prop {
 
 const ButtonLinkDownload = ({ url, title, platform }: Prop) => {
   return (
-    <div className={styles.buttonContainer}>
+    <a
+      className={styles.buttonContainer}
+      href={
+        platform === "android"
+          ? "https://play.google.com/store/apps/details?id=pe.mipata.mipata&hl=es"
+          : "https://apps.apple.com/pa/app/mi-pata-mascotas/id1534249237"
+      }
+      target="_blank"
+    >
       <div className={styles.imageContainer}>
         {platform === "android" && (
           <Image
@@ -37,7 +45,7 @@ const ButtonLinkDownload = ({ url, title, platform }: Prop) => {
           {platform === "android" ? "Google Play" : "App Store"}
         </p>
       </div>
-    </div>
+    </a>
   );
 };
 
