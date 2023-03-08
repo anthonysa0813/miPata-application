@@ -16,9 +16,9 @@ const Header2 = () => {
 
   useEffect(() => {
     console.log("system", osName);
-    if (osName === "Windows" || "Android") {
+    if (osName === "Windows" || osName === "Android") {
       setcurrentSys(true);
-    } else if (osName === "MacOs" || "ios") {
+    } else if (osName === "MacOs" || osName === "ios") {
       setcurrentSys(false);
     }
   }, []);
