@@ -11,7 +11,7 @@
   background-color: #ffffff;
   opacity: 1;
   margin-block-start: 50px;
-  // background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 .testimonialsGrid {
@@ -20,9 +20,9 @@
   background-color: var(--bg-white);
   // border: 2px solid brown;
   align-items: center;
-  margin-block: 100px;
+  margin-block: 50px;
   cursor: pointer;
-  // background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 .imageContent {
@@ -55,5 +55,11 @@
 @media screen and (min-width: 1024px) {
   .imageContent {
     width: 50%;
+  }
+
+  .testimonialsGrid {
+    margin-block: 100px;
+
+    background-attachment: fixed;
   }
 }

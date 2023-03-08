@@ -79,10 +79,10 @@ const Testimonials = () => {
                   </div>
                   <div className={styles.text}>
                     <p>
-                      &quot;Soy un voluntario en un refugio de animales y la app
-                      ha sido muy útil para encontrar hogares para nuestros
-                      perros y gatos. Hemos recibido más solicitudes de adopción
-                      y encontrado más hogares para animales necesitados.&quot;
+                      &quot;Soy voluntario en un refugio de animales y la app ha
+                      sido muy útil para encontrar hogares para nuestros perros
+                      y gatos. Hemos recibido más solicitudes de adopción y
+                      encontrado más hogares para animales necesitados.&quot;
                     </p>
                     <p>Luis Alberto</p>
                   </div>
