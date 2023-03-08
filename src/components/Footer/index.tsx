@@ -36,16 +36,19 @@ const Footer = () => {
               </div>
             </div>
             <div className={styles.contacts}>
-              <div className={styles.titleBox}>
+              {/* <div className={styles.titleBox}>
                 <p>CONTACT</p>
-              </div>
-              <p className={styles.contactItem}>
+              </div> */}
+              <a
+                className={styles.contactItem}
+                href="mailto:contacto@mipata.pe"
+              >
                 <MdEmail />
                 contacto@mipata.pe
-              </p>
-              <div className={styles.titleBox}>
+              </a>
+              {/* <div className={styles.titleBox}>
                 <p>QUICK LINKS </p>
-              </div>
+              </div> */}
               <p className={styles.contactItem}>
                 <BiBook />
                 Términos y Condiciones

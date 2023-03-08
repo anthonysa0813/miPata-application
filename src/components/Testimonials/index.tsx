@@ -29,7 +29,7 @@ const Testimonials = () => {
                 <div className={styles.cardTestimonials}>
                   <div className={styles.imageContainer}>
                     <Image
-                      src="/images/testimonials/persona1.png"
+                      src="/images/testimonials/gabriel.jpeg"
                       alt="Imagen de la persona 2"
                       width={80}
                       height={80}
@@ -50,7 +50,7 @@ const Testimonials = () => {
                 <div className={styles.cardTestimonials}>
                   <div className={styles.imageContainer}>
                     <Image
-                      src="/images/testimonials/persona2.png"
+                      src="/images/testimonials/carla.jpeg"
                       alt="Imagen de la persona 2"
                       width={80}
                       height={80}
@@ -63,7 +63,7 @@ const Testimonials = () => {
                       recibido consejos de nutrición y cuidado de mascotas que
                       realmente han mejorado su calidad de vida.&quot;
                     </p>
-                    <p>Lucía</p>
+                    <p>Carla</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -71,7 +71,7 @@ const Testimonials = () => {
                 <div className={styles.cardTestimonials}>
                   <div className={styles.imageContainer}>
                     <Image
-                      src="/images/testimonials/persona3.png"
+                      src="/images/testimonials/luis.jpeg"
                       alt="Imagen de la persona 3"
                       width={80}
                       height={80}
