@@ -1,12 +1,6 @@
 import React, { use, useCallback, useEffect, useState } from "react";
 import styles from "../../styles/Header/Header2.module.scss";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-  osName,
-} from "react-device-detect";
+import { isMacOs, isIOS, osName } from "react-device-detect";
 
 const Header2 = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -18,7 +12,7 @@ const Header2 = () => {
     console.log("system", osName);
     if (osName === "Windows" || osName === "Android") {
       setcurrentSys(true);
-    } else if (osName === "MacOs" || osName === "ios") {
+    } else if (isMacOs || isIOS) {
       setcurrentSys(false);
     }
   }, []);
