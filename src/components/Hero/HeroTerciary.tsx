@@ -84,10 +84,13 @@ const Hero3 = () => {
             className={`${styles.infoHero} animate__animated  animate__bounceInRight`}
           >
             <div className={styles.wrapper}>
-              <AnimationOnScroll
+              {/* <AnimationOnScroll
                 initiallyVisible
                 animateIn="animate__fadeInRightBig"
               >
+                
+              </AnimationOnScroll> */}
+              <div className="">
                 <h1>
                   La comunidad más grande de mascotas y quienes las amamos.
                 </h1>
@@ -102,7 +105,7 @@ const Hero3 = () => {
                     </li>
                   </ul>
                 </div>
-              </AnimationOnScroll>
+              </div>
             </div>
           </div>
         </div>
