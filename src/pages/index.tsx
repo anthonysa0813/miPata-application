@@ -1,10 +1,7 @@
 import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
 import LoadingMiPata from "../components/LoadingComponent/LoadingMiPata";
-import OurAppComponent from "../components/OurApp";
 import ServicesMiPata from "../components/ServicesMiPata";
 import Head from "next/head";
 import Testimonials from "../components/Testimonials";

@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { BiBook } from "react-icons/bi";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -49,10 +50,12 @@ const Footer = () => {
               {/* <div className={styles.titleBox}>
                 <p>QUICK LINKS </p>
               </div> */}
-              <p className={styles.contactItem}>
-                <BiBook />
-                Términos y Condiciones
-              </p>
+              <Link href="/terminos">
+                <p className={styles.contactItem}>
+                  <BiBook />
+                  Términos y Condiciones
+                </p>
+              </Link>
             </div>
             <div className={styles.subscribe}>
               <div className={styles.titleBox}>

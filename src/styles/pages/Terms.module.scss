@@ -1,0 +1,27 @@
+.title {
+  font-size: 24px;
+  color: var(--bg-orange);
+}
+
+.listTerms {
+  margin-inline: 0;
+  padding: 0;
+  li {
+    counter-increment: termsCounter;
+    margin-block: 1rem;
+    font-weight: bold;
+  }
+}
+
+.listTerms {
+  list-style-type: none;
+  li::before {
+    content: counter(termsCounter) ". ";
+  }
+}
+
+.finalNote {
+  font-weight: bold;
+  margin-block-start: 2rem;
+  color: var(--bg-gray200);
+}

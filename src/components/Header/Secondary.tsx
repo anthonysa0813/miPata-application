@@ -1,6 +1,7 @@
-import React, { use, useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "../../styles/Header/Header2.module.scss";
 import { isMacOs, isIOS, osName } from "react-device-detect";
+import Link from "next/link";
 
 const Header2 = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -37,7 +38,7 @@ const Header2 = () => {
       className={`${styles.header} ${scrollY ? styles.backgroundWhite : ""}`}
     >
       <div className={styles.headerContainer}>
-        <div className="logoMiPata">
+        <Link href="/" className="logoMiPata">
           {scrollY ? (
             <i
               className="icon-logo color-orange"
@@ -49,7 +50,7 @@ const Header2 = () => {
               style={{ fontSize: "3rem" }}
             ></i>
           )}
-        </div>
+        </Link>
 
         <div className={styles.menuOptions}>
           <ul>
