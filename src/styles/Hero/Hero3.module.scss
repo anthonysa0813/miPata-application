@@ -67,7 +67,7 @@
   width: 100%;
   display: flex;
   background-color: var(--bg-orange);
-
+  // border: 5px solid brown;
   order: 2;
   justify-content: end;
   // border: 2px solid;
@@ -84,7 +84,7 @@
 }
 
 .infoHero {
-  // border: 2px solid brown;
+  // border: 5px solid purple;
   padding: 1rem;
   .wrapper {
     width: 100%;
@@ -97,7 +97,7 @@
     column-gap: 5rem;
   }
   .imageContent {
-    flex: 1 0 30%;
+    // flex: 1 0 30%;
 
     img {
       height: 400px;

@@ -24,8 +24,9 @@ const Testimonials = () => {
               navigation={true}
               modules={[Pagination, Navigation]}
               className="mySwiper"
+              autoplay={true}
             >
-              <SwiperSlide>
+              <SwiperSlide style={{ marginBlockEnd: "1rem" }}>
                 <div className={styles.cardTestimonials}>
                   <div className={styles.imageContainer}>
                     <Image
@@ -36,7 +37,7 @@ const Testimonials = () => {
                     />
                   </div>
                   <div className={styles.text}>
-                    <p className="text-red-600">
+                    <p>
                       &quot;Mi perro se escapó de la casa y pensé que lo había
                       perdido para siempre. Gracias a miPata, pude publicar su
                       foto y ubicación en tiempo real, y alguien lo encontró y
