@@ -37,17 +37,11 @@ const Header2 = () => {
       className={`${styles.header} ${scrollY ? styles.backgroundWhite : ""}`}
     >
       <div className={styles.headerContainer}>
-        <Link href="/" className="logoMiPata">
+        <Link href="/" className={styles.logoMiPata}>
           {scrollY ? (
-            <i
-              className="icon-logo color-orange"
-              style={{ fontSize: "2.5rem" }}
-            ></i>
+            <i className="icon-logo color-orange"></i>
           ) : (
-            <i
-              className="icon-logo color-orange "
-              style={{ fontSize: "3rem" }}
-            ></i>
+            <i className="icon-logo color-orange "></i>
           )}
         </Link>
 

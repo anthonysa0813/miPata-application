@@ -14,6 +14,17 @@
   padding-inline: 1rem;
 }
 
+.logoMiPata {
+  width: 50px;
+  height: 50px;
+
+  i {
+    width: 100%;
+    height: 100%;
+    font-size: 3.125rem;
+  }
+}
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
