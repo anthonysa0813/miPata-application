@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const Header2 = () => {
   const [scrollY, setScrollY] = useState(0);
-
   // if the value is true is equal "Android system", when the value is false is equal "iOS system"
   const [currentSys, setcurrentSys] = useState(true);
 
@@ -42,7 +41,7 @@ const Header2 = () => {
           {scrollY ? (
             <i
               className="icon-logo color-orange"
-              style={{ fontSize: "3rem" }}
+              style={{ fontSize: "2.5rem" }}
             ></i>
           ) : (
             <i
