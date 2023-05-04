@@ -3,14 +3,15 @@ import styles from "../../styles/Header/Header2.module.scss";
 import { isMacOs, isIOS, osName } from "react-device-detect";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Header2 = () => {
   const [scrollY, setScrollY] = useState(0);
   // if the value is true is equal "Android system", when the value is false is equal "iOS system"
   const [currentSys, setcurrentSys] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
-    console.log("system", osName);
     if (osName === "Windows" || osName === "Android") {
       setcurrentSys(true);
     } else if (isMacOs || isIOS) {
@@ -20,7 +21,6 @@ const Header2 = () => {
 
   const onScroll = useCallback((event: any) => {
     const { pageYOffset, scrollY } = window;
-    console.log("yOffset", pageYOffset, "scrollY", scrollY);
     setScrollY(window.pageYOffset);
   }, []);
 
@@ -33,24 +33,21 @@ const Header2 = () => {
     };
   }, []);
 
+  const goToHomePage = () => {
+    router.push("/");
+  };
+
   return (
     <header
       className={`${styles.header} ${scrollY ? styles.backgroundWhite : ""}`}
     >
       <div className={styles.headerContainer}>
-        {/* <Link href="/" className={styles.logoMiPata}>
-           {scrollY ? (
-            <i className="icon-logo color-orange"></i>
-          ) : (
-            <i className="icon-logo color-orange "></i>
-          )} 
-        </Link>*/}
-
         <Image
           src="/images/logo-miPata.png"
           width={50}
           height={50}
           alt="logo de miPata"
+          onClick={goToHomePage}
         />
 
         <div className={styles.menuOptions}>

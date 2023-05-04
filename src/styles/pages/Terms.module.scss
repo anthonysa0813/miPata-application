@@ -3,6 +3,11 @@
   color: var(--bg-orange);
 }
 
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .listTerms {
   margin-inline: 0;
   padding: 0;
@@ -24,4 +29,11 @@
   font-weight: bold;
   margin-block-start: 2rem;
   color: var(--bg-gray200);
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

@@ -5,7 +5,7 @@ import styles from "../styles/pages/Terms.module.scss";
 const terminos = () => {
   return (
     <MainLayout title={"MiPata | Términos y Condiciones"}>
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <h1 className={styles.title}>Términos y condiciones de miPata</h1>
         <ol className={styles.listTerms}>
           <li>
